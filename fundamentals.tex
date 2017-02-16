@@ -7,7 +7,7 @@
 \usepackage{amsmath}  % needed for \tfrac, \bmatrix, etc.
 \usepackage{amsfonts} % needed for bold Greek, Fraktur, and blackboard bold
 \usepackage{graphicx} % needed for figures
-\usepackage{epstopdf}
+%\usepackage{epstopdf}
 
 \begin{document}
 
@@ -15,8 +15,7 @@
 % to format your title page.  Don't use lower-level macros to  manually
 % adjust the fonts and centering.
 
-\title{Preparation of manuscripts for the American Journal of Physics
-using \LaTeX}
+\title{KAT-7 and Python as tools for teaching radio interferometry}
 % In a long title you can use \\ to force a line break at a certain location.
 
 \author{Daniel V. Schroeder}
@@ -51,6 +50,40 @@ AJP authors.
 
 \section{Introduction} % Section titles are automatically converted to all-caps.
 % Section numbering is automatic.
+
+\section{Fundamentals of Interferometry}
+
+\subsection{Course Material}
+\begin{figure}[h!]
+% The bracketed code determines the figure's placement:  "h" stands for 
+% "here", telling LaTeX to put the figure as close to the current location 
+% as possible.  The ! overrides LaTeX's tendency to try to find a location 
+% that it thinks is better.  But don't agonize over the exact figure placement 
+% in your submitted manuscript.  For your initial submission, just make sure 
+% each figure is reasonably close to where it's first referenced.
+\centering
+\includegraphics[width=0.7\textwidth]{./course_material.pdf}
+\caption{The teaching material that was used in teaching Fundamentals of Interferometry can be divided into three broad categories, namely conventional 
+lectures, an ipython notebook based textbook and CASA. Each of these categories contribute an equal amount to the total body of teaching material.}
+\label{gasbulbdata}
+\end{figure}
+
+The novelty of the Fundamentals of Interferometry course lies in the teaching material that is used to help the students learn. We make use of three
+mediums in particular:
+
+\begin{enumerate}
+ \item Conventional lectures: We use conventional lectures. xx hours of lecturing. In the lectures we focus primarily on getting the main points across. The exact details
+ can be studied in the book. We also record the lectures and make them available to the students so that they can refer back to the material at any point.
+ \item Ipython notebook based textbook: We use a novel text book in this course. It consists of ipython notebooks. The main drawback of a conventional 
+ textbook is that complicated mathematical ideas are not supplemented with executable computer code. It is much easier to learn a mathematical construct 
+ if you can also inspect a small piece of executable code that implements the idea. We address this short coming in the electronic book by providing 
+ executable pieces of python code that implements some of the complicated ideas, making it easier to understand.
+ \item CASA: CASA is a reduction package. In interferometry it is crucial for learners to not only understand the theoretical concepts, but to be able to apply it 
+ to real data. That is why each student is required to reduce a real KAT7 dataset as part of the course. KAT7 is a proof of concept instrument whose main purpose 
+ is to be used as a teaching tool. In this course students have access to real non-sensitive sceintific data which they may use to learn the basics. 
+\end{enumerate}
+
+
 
 
 \appendix*   % Omit the * if there's more than one appendix.
