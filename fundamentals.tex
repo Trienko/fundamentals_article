@@ -53,7 +53,16 @@ AJP authors.
 
 \section{Fundamentals of Interferometry}
 
+The phrase ``Fundamentals of Interferometry'' can refer to either a course or the ipython notebook based textbook which is used to teach the interferometry course. To distinguish between
+these two concepts we will be making use of italic and bold formatting, i.e \textit{Fundamentals of Interferometry} refer to the course itself, while  
+\textbf{Fundamentals of Interferometry} refer to the textbook the course uses. The official course website is: . The electronic textbook can be obtained here:
+
+The \textit{Fundamentals of Interferometry} course differs from conventional interferometry courses in that it makes use of novel teaching mediums. We discuss this 
+in greater detail in Section~\ref{sec:course_material}. Moreover, the \textit{Fundamentals of Interferometry} is also unique in terms of the physical content that it covers.
+We describe the course content in more detail in Section~\ref{sec:course_content}.
+
 \subsection{Course Material}
+\label{sec:course_material}
 \begin{figure}[h!]
 % The bracketed code determines the figure's placement:  "h" stands for 
 % "here", telling LaTeX to put the figure as close to the current location 
@@ -63,25 +72,52 @@ AJP authors.
 % each figure is reasonably close to where it's first referenced.
 \centering
 \includegraphics[width=0.7\textwidth]{./course_material.pdf}
-\caption{The teaching material that was used in teaching Fundamentals of Interferometry can be divided into three broad categories, namely conventional 
+\caption{The teaching mediums that is used in teaching \textit{Fundamentals of Interferometry} can be divided into three broad categories, namely conventional 
 lectures, an ipython notebook based textbook and CASA. Each of these categories contribute an equal amount to the total body of teaching material.}
 \label{gasbulbdata}
 \end{figure}
 
-The novelty of the Fundamentals of Interferometry course lies in the teaching material that is used to help the students learn. We make use of three
-mediums in particular:
+In particular we make use of three teaching mediums:
 
 \begin{enumerate}
- \item Conventional lectures: We use conventional lectures. xx hours of lecturing. In the lectures we focus primarily on getting the main points across. The exact details
- can be studied in the book. We also record the lectures and make them available to the students so that they can refer back to the material at any point.
- \item Ipython notebook based textbook: We use a novel text book in this course. It consists of ipython notebooks. The main drawback of a conventional 
- textbook is that complicated mathematical ideas are not supplemented with executable computer code. It is much easier to learn a mathematical construct 
- if you can also inspect a small piece of executable code that implements the idea. We address this short coming in the electronic book by providing 
- executable pieces of python code that implements some of the complicated ideas, making it easier to understand.
- \item CASA: CASA is a reduction package. In interferometry it is crucial for learners to not only understand the theoretical concepts, but to be able to apply it 
- to real data. That is why each student is required to reduce a real KAT7 dataset as part of the course. KAT7 is a proof of concept instrument whose main purpose 
- is to be used as a teaching tool. In this course students have access to real non-sensitive sceintific data which they may use to learn the basics. 
+ \item \textit{Conventional lectures}: We make use of conventional presentation style lectures. The course 
+ consists of 32 hours of lecturing. The main focus of the lectures are to get the main interferometric concepts across. The finer details  
+ can be obtained from the the text book. The lectures are also recorded and are made available to the students so that they can refer back to the material at any point.
+ The presentations and the recorded lectures can be found on the official course website.
+ \item \textit{Ipython notebook based textbook}: We make use of a novel text book in this course. It consists of ipython notebooks. The main drawback of a conventional 
+ textbook is that complicated mathematical ideas are not supplemented with executable computer code. It is much easier to learn an abstract mathematical construct 
+ if you can also inspect a small piece of executable code that also implements the idea. We address this short coming in the electronic book by providing 
+ executable pieces of python code that implements most of the complicated ideas, making it easier to grasp and understand.
+ \item \textit{\textsc{CASA}}: \textsc{CASA} is a reduction package. To grasp interferometry it is crucial for students to not only understand the theoretical concepts, but to also gain 
+ practical experience in reducing real interferometric data. That is why each student is required to reduce a real KAT7 dataset as part of the course. KAT7 is a proof of concept instrument and can be used as a teaching tool. 
+ Since we are making use of KAT7 data in this course students have access to real non-sensitive sceintific data which they may use to learn the basics. 
 \end{enumerate}
+
+\subsection{Course Content}
+\label{sec:course_content}
+The \textit{Fundamentals of Interferometry} course covers a lot of background material which is normally just 
+skipped over as it is simply assumed that most of the students are familiar with the background material needed to study interferometry. We have found that, in particular for a South African context, this is not the case.
+The students that partake in the course come from a wide variety of backgrounds including: Chemistry, Physics, Mathematics, Astronomy and Computer Science. Most of the students, therefore, do not have enough familiarity with all
+the background topics required to understand interferometry. We spend about a third of the course teaching the required background topics.
+Another important aspect of interferometry is to gain practical experience reducing interferometric data. We spend another third of the course on teaching students 
+how to reduce real interferometric data. The remaining time is evenly allocated to the most important interferometric topics.
+
+\subsubsection{Background Topics}
+\label{sec:background_topics}
+We cover the following background topics in some detail:
+
+\begin{enumerate}
+\item  \textit{Positional Astronomy}: In positional astronomy we explain different astronomical coordinate systems, in particular the equatorial and horizontal coordinate system, which are crucial for students to know if they hope 
+to become proficient in interferometry. We also define concepts like hour angle and local sidereal time which are fundamental to 
+to master if one wants to compute the $uv$-coverage of an array from first principals. We also cover the direction cosine coordinate system in some detail. This coordinate 
+system is often used in interferometry, because using it automatically exposes a Fourier relationship between the sky brightness distribution and the measurements 
+an interferometer makes, i.e visibilities.
+\item {\textit}{}
+
+\end{enumerate}
+
+
+
 
 
 
